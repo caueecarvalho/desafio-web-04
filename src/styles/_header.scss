@@ -1,0 +1,67 @@
+header {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .conteudo {
+    width: 700px;
+    text-align: center;
+  }
+
+  h1 {
+    @include texto(65px, $cor1);
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    @include texto(30px);
+  }
+
+  .feedback {
+    @include texto(15px, $cor4);
+    background: $cor1;
+    padding: 25px 35px 45px 25px;
+    border-radius: 5px;
+    position: fixed;
+    transform: rotate(270deg);
+    right: -45px;
+    top: 40%;
+
+    &:hover {
+      right: -35px;
+    }
+  }
+
+  .coca {
+    height: 150px;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+  }
+
+  .frigideira {
+    height: 350px;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+  }
+
+  .compras {
+    height: 250px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+  }
+
+  .tomate {
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    display: none;
+  }
+}

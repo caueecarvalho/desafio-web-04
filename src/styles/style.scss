@@ -6,11 +6,11 @@ $cor4: #fff;
 
 // Funcao
 @mixin texto($size, $color: $cor2) {
-    font: $size 'Roboto', sans-serif;
-    color: $color;
+  font: $size "Roboto", sans-serif;
+  color: $color;
 }
 
 // Import
-@import 'reset';
-
-// Seu código css aqui
+@import "reset";
+@import "header";
+@import "media";
